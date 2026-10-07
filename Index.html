@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Examination Scholarship Scheme | माँ सुनीता ग्रुप ऑफ एजुकेशन एंड चेरिटेबल ट्रस्ट</title>
+
+  <meta name="description"
+        content="Examination Scholarship Scheme - माँ सुनीता ग्रुप ऑफ एजुकेशन एंड चेरिटेबल ट्रस्ट">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #123c73, #1769aa);
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    .header-box {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 55px;
+      height: 55px;
+      background: white;
+      color: #123c73;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    .logo-text h1 {
+      font-size: 19px;
+    }
+
+    .logo-text p {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #e8f3ff, #ffffff);
+      padding: 65px 20px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fff3cd;
+      color: #856404;
+      padding: 7px 15px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      color: #123c73;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      color: #1769aa;
+      font-size: 23px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #1769aa;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #123c73;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #1769aa;
+      border: 2px solid #1769aa;
+    }
+
+    .btn-secondary:hover {
+      background: #1769aa;
+      color: white;
+    }
+
+    /* NOTICE */
+    .notice {
+      background: #fff;
+      max-width: 1100px;
+      margin: 25px auto;
+      padding: 15px 20px;
+      border-left: 5px solid #ff9800;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      border-radius: 6px;
+    }
+
+    .notice strong {
+      color: #d35400;
+    }
+
+    /* SECTION */
+    section {
+      padding: 45px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #123c73;
+      font-size: 29px;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #1769aa;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-box p {
+      color: #555;
+      margin-top: 10px;
+    }
+
+    /* STEPS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .step {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    }
+
+    .step-number {
+      width: 45px;
+      height: 45px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      background: #1769aa;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* ELIGIBILITY */
+    .eligibility {
+      background: #eef6ff;
+    }
+
+    .eligibility ul {
+      max-width: 750px;
+      margin: auto;
+      list-style: none;
+    }
+
+    .eligibility li {
+      background: white;
+      margin: 10px 0;
+      padding: 13px 18px;
+      border-radius: 7px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .eligibility li::before {
+      content: "✓";
+      color: green;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #123c73, #1769aa);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      margin-bottom: 20px;
+    }
+
+    .cta .btn {
+      background: white;
+      color: #123c73;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #102a43;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 13px;
+      margin: 5px 0;
+      opacity: 0.9;
+    }
+
+    .footer-links {
+      margin: 12px 0;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+
+      .header-box {
+        flex-direction: column;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 29px;
+      }
+
+      .hero h3 {
+        font-size: 19px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .steps {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .logo-text h1 {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .logo-area {
+        flex-direction: column;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-box">
+
+    <div class="logo-area">
+      <div class="logo">ESS</div>
+
+      <div class="logo-text">
+        <h1>माँ सुनीता ग्रुप ऑफ एजुकेशन एंड चेरिटेबल ट्रस्ट</h1>
+        <p>Examination Scholarship Scheme</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#scheme">Scheme</a>
+      <a href="#eligibility">Eligibility</a>
+      <a href="#documents">Documents</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <span class="badge">🎓 Scholarship 2026</span>
+
+    <h2>Examination Scholarship Scheme</h2>
+
+    <h3>माँ सुनीता ग्रुप ऑफ एजुकेशन एंड चेरिटेबल ट्रस्ट</h3>
+
+    <p>
+      विद्यार्थियों को शिक्षा के क्षेत्र में प्रोत्साहित करने तथा
+      उनकी शैक्षणिक प्रतिभा को बढ़ावा देने के उद्देश्य से
+      Examination Scholarship Scheme संचालित की जा रही है।
+    </p>
+
+    <div class="buttons">
+
+      <!-- बाद में अपना Application Form Link यहाँ डालें -->
+      <a href="#" class="btn btn-primary">
+        📝 Apply Now
+      </a>
+
+      <a href="#scheme" class="btn btn-secondary">
+        📚 Scheme Details
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NOTICE -->
+<div class="notice">
+
+  <strong>📢 महत्वपूर्ण सूचना:</strong>
+
+  Examination Scholarship Scheme से संबंधित आवेदन,
+  पात्रता, आवश्यक दस्तावेज एवं अन्य जानकारी इस वेबसाइट पर
+  उपलब्ध कराई जाएगी।
+
+</div>
+
+
+<!-- SCHOLARSHIP FEATURES -->
+<section id="scheme">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Scholarship Scheme
+    </h2>
+
+    <p class="section-subtitle">
+      योजना की मुख्य विशेषताएँ
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🎓</div>
+        <h3>Education Support</h3>
+        <p>
+          विद्यार्थियों को उच्च शिक्षा के लिए प्रोत्साहित करना।
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏆</div>
+        <h3>Merit Based</h3>
+        <p>
+          परीक्षा एवं शैक्षणिक प्रदर्शन के आधार पर
+          विद्यार्थियों को प्रोत्साहन।
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💰</div>
+        <h3>Scholarship Benefit</h3>
+        <p>
+          पात्र विद्यार्थियों को निर्धारित नियमों के अनुसार
+          scholarship benefit प्रदान किया जाएगा।
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about">
+
+  <div class="about-box">
+
+    <h2 class="section-title">
+      हमारी Scholarship Scheme
+    </h2>
+
+    <p>
+      Examination Scholarship Scheme का उद्देश्य योग्य एवं
+      प्रतिभाशाली विद्यार्थियों को शिक्षा के लिए प्रोत्साहित करना
+      है। यह योजना माँ सुनीता ग्रुप ऑफ एजुकेशन एंड चेरिटेबल ट्रस्ट
+      द्वारा संचालित की जा रही है।
+    </p>
+
+    <p>
+      योजना की पात्रता, परीक्षा, आवेदन प्रक्रिया एवं scholarship
+      amount संस्था द्वारा निर्धारित नियमों के अनुसार होगी।
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- HOW TO APPLY -->
+<section>
+
+  <div class="container">
+
+    <h2 class="section-title">
+      आवेदन कैसे करें?
+    </h2>
+
+    <p class="section-subtitle">
+      Online Application Process
+    </p>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Registration</h3>
+        <p>Online Registration करें।</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Application</h3>
+        <p>आवेदन फॉर्म पूरा भरें।</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Documents</h3>
+        <p>आवश्यक दस्तावेज upload करें।</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Submit</h3>
+        <p>फॉर्म submit करके acknowledgement रखें।</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ELIGIBILITY -->
+<section class="eligibility" id="eligibility">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      पात्रता
+    </h2>
+
+    <p class="section-subtitle">
+      Eligibility Criteria
+    </p>
+
+    <ul>
+
+      <li>विद्यार्थी निर्धारित परीक्षा/योजना में पात्र होना चाहिए।</li>
+
+      <li>आवेदक को निर्धारित आवेदन प्रक्रिया पूरी करनी होगी।</li>
+
+      <li>सभी आवश्यक दस्तावेज सही एवं वैध होने चाहिए।</li>
+
+      <li>गलत जानकारी देने पर आवेदन निरस्त किया जा सकता है।</li>
+
+      <li>अंतिम पात्रता संस्था के निर्धारित नियमों के अनुसार होगी।</li>
+
+    </ul>
+
+  </div>
+
+</section>
+
+
+<!-- DOCUMENTS -->
+<section id="documents">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      आवश्यक दस्तावेज
+    </h2>
+
+    <p class="section-subtitle">
+      Required Documents
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🪪</div>
+        <h3>Identity Proof</h3>
+        <p>आवश्यक पहचान प्रमाण।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>Marksheet</h3>
+        <p>परीक्षा/शैक्षणिक marksheet।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📷</div>
+        <h3>Photograph</h3>
+        <p>हाल की passport size photograph।</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+  <h2>
+    Scholarship के लिए आवेदन करें
+  </h2>
+
+  <p>
+    योग्य विद्यार्थी Online Application प्रक्रिया शुरू कर सकते हैं।
+  </p>
+
+  <!-- यहाँ बाद में Google Form / Application Portal का link लगाएँ -->
+  <a href="#" class="btn">
+    📝 Apply Online
+  </a>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Contact Us
+    </h2>
+
+    <p class="section-subtitle">
+      माँ सुनीता ग्रुप ऑफ एजुकेशन एंड चेरिटेबल ट्रस्ट
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">📞</div>
+        <h3>Helpline</h3>
+        <p>अपना मोबाइल नंबर यहाँ डालें</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📧</div>
+        <h3>Email</h3>
+        <p>अपना email address यहाँ डालें</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📍</div>
+        <h3>Address</h3>
+        <p>अपना संस्था का पता यहाँ डालें</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <h3>
+    माँ सुनीता ग्रुप ऑफ एजुकेशन एंड चेरिटेबल ट्रस्ट
+  </h3>
+
+  <p>
+    Examination Scholarship Scheme
+  </p>
+
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#scheme">Scheme</a>
+    <a href="#eligibility">Eligibility</a>
+    <a href="#documents">Documents</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <p>
+    © 2026 Examination Scholarship Scheme. All Rights Reserved.
+  </p>
+
+  <p>
+    Disclaimer: Scholarship approval संस्था के निर्धारित नियम एवं
+    पात्रता के अनुसार होगा।
+  </p>
+
+</footer>
+
+</body>
+  </html>
